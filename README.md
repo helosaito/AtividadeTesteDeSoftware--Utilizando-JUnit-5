@@ -1,4 +1,4 @@
-# Relatório – Teste de Software: Sistema de Locação de Veículos
+# Relatório
 # 1. Objetivo
 
 O objetivo da atividade foi criar e testar uma funcionalidade para calcular o valor de uma locação de veículos, utilizando JUnit 5. Foram considerados diferentes cenários, como descontos, seguro, quilometragem, idade do motorista e entradas inválidas.
