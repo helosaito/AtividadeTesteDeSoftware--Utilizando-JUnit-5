@@ -3,7 +3,7 @@
 
 O objetivo da atividade foi criar e testar uma funcionalidade para calcular o valor de uma locação de veículos, utilizando JUnit 5. Foram considerados diferentes cenários, como descontos, seguro, quilometragem, idade do motorista e entradas inválidas.
 
-2. Entendimento do problema
+# 2. Entendimento do problema
 
 Primeiro, analisei as regras do sistema para entender como o valor da locação deveria ser calculado.
 
@@ -21,13 +21,13 @@ Alguns valores de entrada são inválidos e devem gerar uma exceção.
 
 Também utilizei o exemplo fornecido na atividade para conferir se o cálculo final estava correto.
 
-3. Interação com a Inteligência Artificial
+# 3. Interação com a Inteligência Artificial
 
 Durante a atividade, utilizei a Inteligência Artificial como apoio para criar os casos de teste e para ajudar na implementação dos testes com JUnit 5.
 
 Primeiro, pedi sugestões de casos de teste com base nas regras do sistema. Depois, analisei os casos sugeridos para verificar se estavam completos, se existiam casos repetidos e se as principais situações estavam sendo testadas.
 
-4. Alteração dos casos de teste
+# 4. Alteração dos casos de teste
 
 A primeira sugestão de casos de teste tinha algumas situações repetidas e não explorava tanto os limites das regras.
 
@@ -44,7 +44,7 @@ Também foram incluídos casos de entradas inválidas, como dias iguais a zero, 
 
 A mudança foi feita para que os testes fossem mais completos e verificassem não apenas situações comuns, mas também os limites das regras.
 
-5. Cobertura dos testes
+# 5. Cobertura dos testes
 
 Após executar os testes, foi utilizada a opção Run with Coverage do IntelliJ IDEA para verificar a cobertura do código.
 
