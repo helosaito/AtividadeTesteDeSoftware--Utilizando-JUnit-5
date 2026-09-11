@@ -50,8 +50,8 @@ Após executar os testes, foi utilizada a opção Run with Coverage do IntelliJ 
 
 Foram analisados os seguintes resultados:
 
-Statement Coverage: ___%
-Branch Coverage: ___%
-Condition Coverage: ___%
+Statement Coverage: 100%
+Branch Coverage: 100%
+Condition Coverage: 100%
 
 A cobertura foi utilizada para verificar quais partes do código foram executadas pelos testes e se havia algum trecho que ainda precisava ser melhor testado.
