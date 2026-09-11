@@ -1,25 +1,57 @@
-# Locadora de Veículos - JUnit 5
+# Relatório – Teste de Software: Sistema de Locação de Veículos
+# 1. Objetivo
 
-Projeto Java 17 com Maven para a atividade de Teste de Software.
+O objetivo da atividade foi criar e testar uma funcionalidade para calcular o valor de uma locação de veículos, utilizando JUnit 5. Foram considerados diferentes cenários, como descontos, seguro, quilometragem, idade do motorista e entradas inválidas.
 
-## Estrutura
+2. Entendimento do problema
 
-- `src/main/java/com/locadora/Locadora.java`: implementação do cálculo da locação.
-- `src/test/java/com/locadora/LocadoraTest.java`: 18 testes automatizados em JUnit 5.
-- `pom.xml`: configuração do Maven e dependência do JUnit 5.
+Primeiro, analisei as regras do sistema para entender como o valor da locação deveria ser calculado.
 
-## Como abrir no IntelliJ
+As principais regras consideradas foram:
 
-1. Extraia o ZIP.
-2. Abra o IntelliJ IDEA.
-3. Selecione `Open` e escolha a pasta `locadora-veiculos`.
-4. O IntelliJ deve reconhecer o `pom.xml` como projeto Maven.
-5. Aguarde o download das dependências.
-6. Abra `LocadoraTest.java`.
-7. Execute a classe pelo botão de execução ao lado da classe.
+O valor das diárias é calculado pela quantidade de dias × valor da diária.
+A franquia é de 100 km por dia.
+Cada quilômetro que ultrapassar a franquia custa R$ 0,50.
+O seguro custa R$ 35 por dia.
+De 7 a 14 dias existe desconto de 5% sobre as diárias.
+Acima de 14 dias, o desconto é de 10% sobre as diárias.
+O desconto não é aplicado ao seguro nem à quilometragem excedente.
+Motoristas com menos de 21 anos pagam uma taxa adicional de R$ 150.
+Alguns valores de entrada são inválidos e devem gerar uma exceção.
 
-## Observação
+Também utilizei o exemplo fornecido na atividade para conferir se o cálculo final estava correto.
 
-A implementação foi criada de acordo com os requisitos fornecidos na atividade. Os testes foram escritos com base nos 18 casos de teste definidos anteriormente.
+3. Interação com a Inteligência Artificial
 
-Depois de executar os testes, use `Run with Coverage` no IntelliJ para analisar a cobertura.
+Durante a atividade, utilizei a Inteligência Artificial como apoio para criar os casos de teste e para ajudar na implementação dos testes com JUnit 5.
+
+Primeiro, pedi sugestões de casos de teste com base nas regras do sistema. Depois, analisei os casos sugeridos para verificar se estavam completos, se existiam casos repetidos e se as principais situações estavam sendo testadas.
+
+4. Alteração dos casos de teste
+
+A primeira sugestão de casos de teste tinha algumas situações repetidas e não explorava tanto os limites das regras.
+
+Por isso, reorganizei os testes e cheguei a 18 casos de teste, buscando testar melhor as regras do sistema.
+
+Incluí casos de fronteira, como:
+
+6 e 7 dias;
+14 e 15 dias;
+20 e 21 anos;
+299, 300 e 301 km.
+
+Também foram incluídos casos de entradas inválidas, como dias iguais a zero, dias negativos, diária igual a zero, idade igual a 17 anos e quilometragem negativa.
+
+A mudança foi feita para que os testes fossem mais completos e verificassem não apenas situações comuns, mas também os limites das regras.
+
+5. Cobertura dos testes
+
+Após executar os testes, foi utilizada a opção Run with Coverage do IntelliJ IDEA para verificar a cobertura do código.
+
+Foram analisados os seguintes resultados:
+
+Statement Coverage: ___%
+Branch Coverage: ___%
+Condition Coverage: ___%
+
+A cobertura foi utilizada para verificar quais partes do código foram executadas pelos testes e se havia algum trecho que ainda precisava ser melhor testado.
